@@ -1,5 +1,7 @@
 # Phishing Email Analysis Lab
 
+**MITRE ATT&CK:** T1566 – Phishing (T1566.002 – Spearphishing Link)
+
 ## Overview
 Analyzed real, documented phishing email examples from UC Berkeley's public Phishing Examples Archive to practice spotting red flags and understand the different tactics attackers use to trick people into giving up credentials or personal information.
 
