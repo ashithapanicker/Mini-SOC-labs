@@ -1,5 +1,7 @@
 # SOC176 - RDP Brute Force Detected (LetsDefend)
 
+**MITRE ATT&CK:** T1110 – Brute Force (T1110.001 – Password Guessing)
+
 ## Overview
 This is my first alert investigation on LetsDefend's SOC Simulator. The alert flagged repeated RDP login failures on a host called "Matthew" from an external IP address. I picked this one first because it's a classic SOC scenario and ties directly into brute-force concepts I'd already covered in theory.
 
