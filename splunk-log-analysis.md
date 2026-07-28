@@ -54,8 +54,8 @@ This lab's detection scenarios map to the following MITRE ATT&CK techniques:
 
 | Technique ID | Technique Name | Relevance to this Lab |
 |---|---|---|
-| T1078 | Valid Accounts | Detected use of legitimate credentials to access systems in ways that deviated from normal behavior, consistent with adversaries leveraging valid accounts to blend in with normal activity. |
-| T1190 | Exploit Public-Facing Application | Identified log activity consistent with an attacker targeting an internet-facing application/service as an initial access vector. |
+| T1110 | Brute Force | Failed login attempts (Event Code 4625) against local test accounts showed clustering of 4–7 attempts on certain dates, a pattern consistent with password-guessing/brute-force behavior that would warrant closer investigation in a real SOC setting. |
+| T1078 | Valid Accounts | Investigating successful logins (Event Code 4624) required distinguishing legitimate Windows system/service accounts (SYSTEM, DWM, UMFD, machine accounts) from genuine user activity — a core skill for ruling out false positives when an account could otherwise appear to be a valid account used by an adversary. |
 
 **Reference:** [MITRE ATT&CK Matrix](https://attack.mitre.org/)
 
