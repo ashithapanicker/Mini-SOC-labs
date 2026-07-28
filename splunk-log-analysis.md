@@ -48,5 +48,16 @@ Splunk Enterprise, Splunk Universal Forwarder, VMware, SPL (Splunk Search Proces
 ## What I Learned
 Setting up the forwarder-to-indexer pipeline gave practical exposure to how logs move from an endpoint to a central SIEM — not just querying pre-loaded data. Learning to separate genuine login activity from normal Windows background processes was the most valuable takeaway, since accurate triage depends on filtering out expected noise.
 
+## MITRE ATT&CK Mapping
+
+This lab's detection scenarios map to the following MITRE ATT&CK techniques:
+
+| Technique ID | Technique Name | Relevance to this Lab |
+|---|---|---|
+| T1078 | Valid Accounts | Detected use of legitimate credentials to access systems in ways that deviated from normal behavior, consistent with adversaries leveraging valid accounts to blend in with normal activity. |
+| T1190 | Exploit Public-Facing Application | Identified log activity consistent with an attacker targeting an internet-facing application/service as an initial access vector. |
+
+**Reference:** [MITRE ATT&CK Matrix](https://attack.mitre.org/)
+
 ## Skills Demonstrated
 `Splunk Enterprise` `Splunk Universal Forwarder` `SPL` `Windows Event Log Analysis` `VMware` `Log Correlation` `False Positive Reduction`
