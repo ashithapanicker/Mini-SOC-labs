@@ -61,5 +61,14 @@ This alert taught me that in brute-force investigations, sampling a few log entr
 - A "Firewall Action: Allowed" on an alert doesn't mean the login succeeded — it just means the traffic reached the host; the actual outcome has to be verified in the authentication logs.
 - Got this one partially wrong on my first pass (missed the successful login), went back into the logs, found it myself, and corrected my understanding before finalizing my notes here.
 
+---
+
+## MITRE ATT&CK Mapping
+
+| Tactic | Technique ID | Technique Name | Description |
+| :--- | :--- | :--- | :--- |
+| **Credential Access** | [T1110.001](https://attack.mitre.org/techniques/T1110/001/) | Brute Force: Password Guessing | The adversary systematically attempted multiple password combinations via RDP against target host `172.16.17.148` (Matthew) until obtaining valid credentials (`Event ID 4624`). |
+
+
 ## Skills Demonstrated
 Alert triage and ownership, log correlation across multiple events, threat intelligence lookups (VirusTotal), Windows authentication event analysis (4624/4625), brute-force attack pattern recognition, incident verdict documentation, self-review and correction of an initial analysis.
